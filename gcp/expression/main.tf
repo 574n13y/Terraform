@@ -12,7 +12,7 @@ terraform {
 }
 resource "google_storage_bucket" "stanley1" {
   count    = var.env == "prod" ? 5 : 0
-  name     = "demo-gcp-prod${count.index}"
+  name     = "demo-gcp-prod-${count.index}"
   location = var.location[0]
 }
 
