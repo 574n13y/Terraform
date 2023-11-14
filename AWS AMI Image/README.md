@@ -18,4 +18,4 @@
 
 [variables.tf]() --> AWS Variables
 
-[terraform.tfvars]() --> Access key, you don't need one if you have configured AWI CLI
+[terraform.tfvars]() --> Access key, you don't need one if you have configured AWS CLI
