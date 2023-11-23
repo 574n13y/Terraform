@@ -68,7 +68,7 @@
   ![47](https://github.com/574n13y/Terraform/assets/35293085/279aa9c1-b419-46e1-bf60-9bf3bd4ed76e)
   ![48](https://github.com/574n13y/Terraform/assets/35293085/55789fc2-befa-4510-bc6f-605c59299d64)
 
-       *** We did it ***
+            *** We did it ***
 
 - Next Step -> [Cleanup](https://github.com/574n13y/Terraform/tree/main/Cleanup)
    
