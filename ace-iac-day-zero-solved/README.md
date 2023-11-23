@@ -105,6 +105,49 @@
     ![17](https://github.com/574n13y/Terraform/assets/35293085/22419105-69ea-4f46-80cc-dbcbff1b4000)
 
 
+## Please refer [lab2](https://community.aviatrix.com/ace-automation-iac-portal-3/lab-2-588)
+   - In Lab2 we will configure a network domain Connection Policy via Terraform.
+   - Here is an overview of the tasks:
+     1. Code modification
+     2. View changes in the Controller UI
+        
+  - Code Modification --> It is recommended to use a localized setup with an IDE that integrates with your GitHub account. However, you can also make the code changes directly on the GitHub.com UI.
+  - Resize gateways --> ACE Inc is growing now and needs to resize their gateways. The AWS Transit and Spoke Gateways are currently t2.micro. Verify this on the Controller > GATEWAY
+    ![21 0](https://github.com/574n13y/Terraform/assets/35293085/625d8185-a5b8-400a-983c-08c237299593)
+    
+  - ACE needs to resize their AWS gateways from t2.micro to t3.micro. --> Make this change by editing variables.tf file --> On GitHub.com cloud UI, click the Pencil icon to edit directly.
+  - Make the change for the Transit Gateway on line 19 & 35. --> Provide a meaningful commit message at the bottom and click the Commit changes button.
+    ![21](https://github.com/574n13y/Terraform/assets/35293085/b318743c-ae4e-4e95-8fb9-6e47896a9be9)
+
+  - Once we commit the changes to a file, it will automatically queue a Terraform Plan. Back in Terraform Cloud, navigate to the Overview tab of your workspace. Depending on how soon you navigate there, you will see blue Planning or yellow Planned in the Latest Run pane. From there, click on See details to see the planned run with proposed changes such as this:
+    ![22](https://github.com/574n13y/Terraform/assets/35293085/f199aa0a-db10-4305-b4d9-758b47c9e998)
+
+ - Click Confirm & Apply to see the progress of the Terraform apply. When it is complete, both gateways in AWS will be t3.micro size.
+   ![23](https://github.com/574n13y/Terraform/assets/35293085/1d26eb0e-c396-49d6-97ca-e0d2cbd23d00)
+   ![24](https://github.com/574n13y/Terraform/assets/35293085/10acac0b-ae6c-4a43-9b8a-0d52ba78b1e4)
+
+ - Configure a Connection Policy --> Connect BU1 to BU2 by uncommenting this block of code at the bottom of main.tf
+   ![25 0](https://github.com/574n13y/Terraform/assets/35293085/2f6fa63e-4a79-413b-b6e8-480b8448f48f)
+   ![25](https://github.com/574n13y/Terraform/assets/35293085/6ebce91a-47d1-446f-9541-7d6b5494df46)
+   ![25 1](https://github.com/574n13y/Terraform/assets/35293085/fb021165-37f2-4a14-9cb8-d16f397af649)
+   ![26](https://github.com/574n13y/Terraform/assets/35293085/f03e0396-5d1d-41b1-a679-f13b2ff48528)
+   ![27](https://github.com/574n13y/Terraform/assets/35293085/93ebc21b-dc16-4466-a1bc-97209b247a1b)
+   ![28](https://github.com/574n13y/Terraform/assets/35293085/044721f7-64b6-4a78-b6fa-998d2b5cbb93)
+   ![29 0](https://github.com/574n13y/Terraform/assets/35293085/cfb8d1ac-2d64-4569-b72b-b013d829d67c)
+   ![29 1](https://github.com/574n13y/Terraform/assets/35293085/8c7ff8a6-adc8-40ee-aab7-72525ad54efb)
+   ![29 2](https://github.com/574n13y/Terraform/assets/35293085/f2c9a107-be91-4b0b-ac0d-9f244cdcf936)
+
+*** We did it *** 
+Let's get started with [Lab 3]()
+
+
+
+
+
+
+
+
+
 
 
 
