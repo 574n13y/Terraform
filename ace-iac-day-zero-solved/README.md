@@ -60,3 +60,59 @@
      az ad sp create-for-rbac --name "<application name>" --role="contributor" --scopes=/subscriptions/<subscriptions-id>
      ```
 
+ - Terraform Cloud
+   1. Set up workspace -> Create a new Workspace -> Select Version control workflow.
+   2. Authorize Terraform Cloud to verify your GitHub identity. If you do not see this message, disable your browser AdBlocker as it is a pop-up dialog.
+   3. Install Terraform Cloud on your GitHub account. Keep the default of All repositories
+   4. Choose the ace-iac-day-zero repository
+   5. Configure Variables -> Here you will configure Terraform Variables and Environment Variables.
+   6. Then create/configure these five (5) Terraform Variables as follows with sensitive values for the passwords:
+      
+    ```
+     controller_ip = <Public IP address of your Controller>
+     username = admin
+     password = <admin password you assigned to your Controller>
+     aws_account_name = aws-account if your Controller is deployed via Sandbox Starter Tool; OR if you already have a Controller some other way, it is the name your AWS account appears onboarded to the Controller
+     ace_password. Whatever you set it to, please note it down. You will use this to SSH to the workloads.
+    ```
+    7. Then add these six (6) Environment Variables for the AWS and Azure CSP Security Credentials with sensitive values for all of them:
+       
+    ```
+    AWS_ACCESS_KEY_ID = AWS Access Key ID that you used to deploy SST
+    AWS_SECRET_ACCESS_KEY = AWS Secret Access Key that you used to deploy SST
+    TF_VAR_azure_subscription_id = Azure Subscription ID. 
+    TF_VAR_azure_tenant_id = Tenant ID. This is also known as Directory ID.
+    TF_VAR_azure_client_id = Application ID. This is also known as Client ID. 
+    TF_VAR_azure_client_secret = Application Key. This is also known as Client Secret.
+    ```
+    ![14](https://github.com/574n13y/Terraform/assets/35293085/a44b2db8-01be-4748-83b4-b04b367b1326)
+
+    8. Terraform plan and terraform apply -> Move to the Overview tab and perform a terraform plan by from the Actions menu on the right side.
+    9. On the next page, you will see the output of the terraform plan and what resources will be built (the number of resources may vary from the screenshot).
+    ![15](https://github.com/574n13y/Terraform/assets/35293085/3f0c699b-aafa-4d9e-b344-84cea96007fe)
+
+    11. Click Confirm & Apply and provide any notes. This will issue the equivalent of terraform apply. Observe the progress of the resources being created by Terraform.
+    ![16](https://github.com/574n13y/Terraform/assets/35293085/801111c9-6d86-4c1f-a00a-e79339594154)
+    ![10](https://github.com/574n13y/Terraform/assets/35293085/bef1352d-28a0-428c-b8c1-d7d800297ad3)
+
+    12. At the bottom, you will see output generated from the code at the bottom of the aws.tf and azure.tf files that will look like this:
+    13. These are the Public and Private IPs of the Bastion host in BU1 (aka Spoke 1) as well as the Private IP of the App host in BU2 (aka Spoke 2).
+    ![10 1](https://github.com/574n13y/Terraform/assets/35293085/b7b220c9-c8c8-4ca0-9f9a-95aca2dc6b29)
+
+    14. At this point, you should be able to SSH to the BU1 Bastion as Ubuntu and whatever password you set the password variable to above, but from there you won't be able to SSH to the BU2 App. The reason for that is BU1 and BU2 are not yet connected. Verify from the Controller:
+    ![19](https://github.com/574n13y/Terraform/assets/35293085/38e6e914-26b5-460d-ba88-3a4c1706b60a)
+    ![20](https://github.com/574n13y/Terraform/assets/35293085/819b84f1-e638-4841-a5c0-9bd5f6256650)
+    ![17](https://github.com/574n13y/Terraform/assets/35293085/22419105-69ea-4f46-80cc-dbcbff1b4000)
+
+
+
+
+
+
+
+
+
+
+
+ 
+
