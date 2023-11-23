@@ -137,8 +137,9 @@
    ![29 1](https://github.com/574n13y/Terraform/assets/35293085/8c7ff8a6-adc8-40ee-aab7-72525ad54efb)
    ![29 2](https://github.com/574n13y/Terraform/assets/35293085/f2c9a107-be91-4b0b-ac0d-9f244cdcf936)
 
-*** We did it *** 
-Let's get started with [Lab 3]()
+                                                     *** We did it ***
+   
+- Let's get started with [Lab 3](https://github.com/574n13y/Terraform/blob/main/ace-iac-day-two-solved/README.md)
 
 
 
