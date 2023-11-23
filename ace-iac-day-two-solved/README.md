@@ -43,24 +43,39 @@
   ![34](https://github.com/574n13y/Terraform/assets/35293085/8cf17f06-359c-4a93-a39f-039fe5c96e08)
   ![35](https://github.com/574n13y/Terraform/assets/35293085/bfd65cdd-4fa2-42cf-a6d6-a3e87047206e)
 
-- Work done by SecOps team -> Now we can navigate to the browser window where you are logged on in GitHub as the SecOps team to approve the PR. -> navigate to Pull requests > Review requests and click on the request.
+- Work done by SecOps team -> Now we can navigate to the browser window where you are logged on in GitHub as the SecOps team to approve the PR. -> Navigate to Pull requests > Review requests and click on the request.
+- Click Add your review. -> Click Review changes one more time. If you are okay with the changes, click the Approve button and the Submit review. -> Once the SecOps team has Approved the PR, it will look like this:
   ![36](https://github.com/574n13y/Terraform/assets/35293085/a2ab2575-74d7-41ca-8e40-95626f9cb2a3)
   ![37](https://github.com/574n13y/Terraform/assets/35293085/b9500b8f-3eb1-4f15-812b-3abee45e74e4)
   ![38](https://github.com/574n13y/Terraform/assets/35293085/6d2f59c0-a5a1-4aa9-a08f-d2a3bdd7ba2e)
   ![39](https://github.com/574n13y/Terraform/assets/35293085/e7ea1e93-07f2-4e61-b976-c70e655f3cbb)
 
-- hhh
+- GitHub Actions will trigger a Deployment (CD part of Continuous Deployment), which is a Terraform apply and the Network Team can monitor the progress of the apply on Terraform Cloud.
+- At any time in this workflow, you can see the status of the GitHub Actions by clicking on Actions in GitHub.
+- On the Controller, you should now see the new rule in your Egress FQDN filter.
   ![40](https://github.com/574n13y/Terraform/assets/35293085/a7be5854-4bf2-4dc3-b8de-2e8cd18e4dea)
-![41](https://github.com/574n13y/Terraform/assets/35293085/23f74520-5636-4612-9600-198cce280f70)
+  ![41](https://github.com/574n13y/Terraform/assets/35293085/23f74520-5636-4612-9600-198cce280f70)
+  ![42](https://github.com/574n13y/Terraform/assets/35293085/2df893d2-0076-4e43-97a3-212d0bdd7809)
+  ![43](https://github.com/574n13y/Terraform/assets/35293085/4b55fd34-0f3c-4bc9-90e2-2ff5763304bb)
+  ![44 0](https://github.com/574n13y/Terraform/assets/35293085/849eb6e6-0585-4b98-a7fe-c618b0cb5e3b)
+  ![44](https://github.com/574n13y/Terraform/assets/35293085/12ec7903-be50-4967-94f7-ded663c55e2a)
 
-![42](https://github.com/574n13y/Terraform/assets/35293085/2df893d2-0076-4e43-97a3-212d0bdd7809)
+- Let's test the connectivity from BU1 to BU2
+  ![45](https://github.com/574n13y/Terraform/assets/35293085/d586cb2b-4eaf-4037-a51e-8f7d1c5a9c6c)
+  ![46](https://github.com/574n13y/Terraform/assets/35293085/87bbf72b-890e-4914-af16-bf2838a3b388)
+
+- Copilot
+  ![47](https://github.com/574n13y/Terraform/assets/35293085/279aa9c1-b419-46e1-bf60-9bf3bd4ed76e)
+  ![48](https://github.com/574n13y/Terraform/assets/35293085/55789fc2-befa-4510-bc6f-605c59299d64)
+
+                                                                                                      *** We did it ***
+
+- Next Step -> [Cleanup](https://github.com/574n13y/Terraform/tree/main/Cleanup)
+   
+
+  
 
 
-![43](https://github.com/574n13y/Terraform/assets/35293085/4b55fd34-0f3c-4bc9-90e2-2ff5763304bb)
-
-
-![44 0](https://github.com/574n13y/Terraform/assets/35293085/849eb6e6-0585-4b98-a7fe-c618b0cb5e3b)
-![44](https://github.com/574n13y/Terraform/assets/35293085/12ec7903-be50-4967-94f7-ded663c55e2a)
 
 
 
