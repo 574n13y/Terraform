@@ -1,5 +1,7 @@
 # ace-iac-day-two
 
+## Please refer [Lab-3](https://community.aviatrix.com/ace-automation-iac-portal-3/lab-3-589)
+
 - Here is an overview of the tasks:
   1. Refer to the infrastructure built in [Lab 1 & Lab 2](https://github.com/574n13y/Terraform/blob/main/ace-iac-day-zero-solved/README.md)
   2. Fork new ACE code for this lab as a remote repository in your own account
