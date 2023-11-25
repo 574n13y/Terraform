@@ -18,8 +18,8 @@
     3. Delete the remote repository for ace-iac-day-two in GitHub. Click on Settings and scroll all the way to the bottom to Danger Zone. Click  Delete this repository.
     4. Type your repository name and click I understand the consequences, delete this repository.
     5. Destroy Lab 1 and Lab 2 resources
-          * Recall that Lab 1 and Lab 2 share the same Terraform state in the same Terraform Cloud Workspace. The process of Lab 1 and Lab 2 cleanup is identical to the process for Lab 3.
-          * Visit Terraform Cloud > ace-iac-day-zero workspace > Settings menu > Destruction & Deletion > Queue Destroy Plan. Make sure you confirm the plan to proceed with the equivalent of a terraform destroy. This is sufficient for removing your resources created by Lab 1 and Lab 2.
+          * Recall that Lab 1 and Lab 2 share the same Terraform state in the same Terraform Cloud Workspace. The process of [Lab 1 and Lab 2](https://github.com/574n13y/Terraform/tree/main/ace-iac-day-zero-solved) cleanup is identical to the process for Lab 3.
+          * Visit Terraform Cloud > ace-iac-day-zero workspace > Settings menu > Destruction & Deletion > Queue Destroy Plan. Make sure you confirm the plan to proceed with the equivalent of a terraform destroy. This is sufficient for removing the resources created by [Lab 1 and Lab 2](https://github.com/574n13y/Terraform/tree/main/ace-iac-day-zero-solved).
           * Delete the remote repository for ace-iac-day-zero in GitHub. Click on Settings and scroll all the way to the bottom to Danger Zone. Click Delete this repository. 
     7. Destroy Controller and CoPilot from Sandbox Starter Tool
         * Once you are done testing and validating Cloud Networks, you may destroy or delete the entire lab. First, turn off AWS access security on the controller by logging into the controller and clicking on "Settings" in the left-hand nav. Click on "Controller," then "Access Security" in the top tabs. Under "Controller Security Group Management," click "Disable".
